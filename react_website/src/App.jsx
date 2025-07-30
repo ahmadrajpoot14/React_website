@@ -1,7 +1,6 @@
-import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./Components/layout/AppLayout";
-import { Home } from "./pages/Home";
+import Home from "./pages/Home";
 import { About } from "./pages/About";
 import { Product } from "./pages/Product";
 import { Contact } from "./pages/Contact";

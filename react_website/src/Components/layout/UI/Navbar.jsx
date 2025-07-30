@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../../css/Navbar.css"; 
+import "../../../layoutcss/Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
@@ -13,29 +13,30 @@ export const Navbar = () => {
         <header>
             <div className="container">
                 <div className="grid navbar-grid">
-                    <div className="logo">
-
-                        <NavLink to="/">
-                            <img 
-                              src="/images/logo.png" 
-                              alt="Ahmad Website Logo" 
-                              style={{ height: "70px", cursor: "pointer" }} 
-                            />
-                        </NavLink>
-                    </div>
-                    <nav className={showMenu ? "menu-mobile" : "menu-web"}>
-                        <ul className="nav-links">
-                            <li><NavLink to="">Home</NavLink></li>
-                            <li><NavLink to="about">About</NavLink></li>
-                            <li><NavLink to="product">Products</NavLink></li>
-                            <li><NavLink to="contact">Contact</NavLink></li>
-                        </ul>
-                    </nav>
+                    {/* Hamburger menu button on left */}
                     <div className="ham-menu">
                         <button onClick={handleButtonToggle}>
                             <GiHamburgerMenu />
                         </button>
                     </div>
+
+                    {/* Logo centered */}
+                    <div className="logo">
+                        <NavLink to="/" className="logo-text" onClick={() => setShowMenu(false)}>
+                            <span className="logo-cbr">CBR</span>
+                            <span className="logo-vibes">VIBES</span>
+                        </NavLink>
+                    </div>
+
+                    {/* Navigation menu */}
+                    <nav className={showMenu ? "menu-mobile" : "menu-web"}>
+                        <ul className="nav-links">
+                            <li><NavLink to="/" onClick={() => setShowMenu(false)}>Home</NavLink></li>
+                            <li><NavLink to="about" onClick={() => setShowMenu(false)}>About</NavLink></li>
+                            <li><NavLink to="product" onClick={() => setShowMenu(false)}>Products</NavLink></li>
+                            <li><NavLink to="contact" onClick={() => setShowMenu(false)}>Contact</NavLink></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>

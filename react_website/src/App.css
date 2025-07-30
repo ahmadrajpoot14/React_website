@@ -8,13 +8,7 @@ html {
     font-size: 62.5%;
     font-family: "urbanist";
 }
-h1,
-h2,
-h3,
-h4,
-h5{
-    color: #D4AF37;
-}
+
 p,
 li,
 a,
@@ -22,27 +16,16 @@ button {
     font-size: 1.7rem;
     letter-spacing: .1rem;
     line-height: 1.6;
-    color: white;
 }
 li{
     list-style: none;
 }
-a {
-    color: black;
 
-    &:hover {
-        color: blue;
-    }
-}
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 3.2rem;
-}
+
 header {
   height: 10rem;
   box-shadow: 0 4px 6px rgba(100, 95, 95, 0.3); /* added some spread and opacity */
-  background-color: #5f1512; /* closer to the logo background */
+  background-color: #d3cfcf; 
   width: 100%;
 
    
@@ -59,10 +42,3 @@ header {
     display: grid;
 }
 
-.navbar-grid {
-    grid-template-columns: .5fr 1fr;
-    height: 10rem;
-    align-items: center;
-    padding: 0 3.2rem;
-
-}

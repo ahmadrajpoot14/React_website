@@ -1,5 +1,5 @@
 
-import "../../../css/Footer.css";
+import "../../../layoutcss/Footer.css";
 import { FaFacebookF, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
