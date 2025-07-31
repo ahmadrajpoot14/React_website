@@ -1,0 +1,177 @@
+
+
+header {
+  height: 10rem;
+  box-shadow: 0 4px 6px rgba(100, 95, 95, 0.3); /* added some spread and opacity */
+  background-color: #d3cfcf; 
+  width: 100%;
+
+   
+}
+
+
+.container {
+    max-width: 132rem;
+    margin: auto;
+    height: 10rem;
+}
+
+.grid {
+    display: grid;
+}
+
+
+
+.ham-menu {
+    display: none;
+}
+
+
+.menu-web {
+    display: flex;
+}
+
+.menu-mobile {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    background-color: #d3cfcf;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+    z-index: 20;
+    border-top: 1px solid #ccc;
+}
+
+.menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-mobile ul li {
+    width: 100%;
+    text-align: center;
+    padding: .8rem 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.ham-menu button {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: rgb(128, 116, 116);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Logo styles */
+.logo-text {
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    color: black;
+}
+
+.logo-cbr {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #000;
+}
+
+.logo-vibes {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.navbar-grid {
+    grid-template-columns: .5fr 1fr;
+    height: 10rem;
+    align-items: center;
+    padding: 0 3.2rem;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.2rem;
+}
+
+/* Nav links desktop */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #2e2e2d;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+
+.nav-links li a:hover {
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+/* Signin button */
+.signin-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 998px) {
+
+    .menu-web {
+        display: none;
+    }
+
+    .ham-menu {
+        display: inline-block;
+    }
+
+    /* Flex container for mobile nav: hamburger left, logo center, right side buttons */
+    .navbar-grid {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    /* Hamburger on left */
+    .ham-menu {
+        order: 1;
+    }
+
+    /* Logo centered */
+    .logo {
+        order: 2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* If you have buttons on right side, place them here */
+    /* For example, a placeholder right-side menu */
+    .right-side-buttons {
+        order: 3;
+    }
+}
