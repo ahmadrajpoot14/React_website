@@ -5,7 +5,7 @@ import About  from "./pages/About";
 import {Product}  from "./pages/Product";
 import Contact  from "./pages/Contact";
 import { ErrorPage } from "./pages/ErrorPage";
-import "./app.css";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
