@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "urbanist";
+}
+
+p,
+li,
+a,
+button {
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    line-height: 1.6;
+}
+li{
+    list-style: none;
+}
+
+
+header {
+  height: 10rem;
+  box-shadow: 0 4px 6px rgba(100, 95, 95, 0.3); /* added some spread and opacity */
+  background-color: #d3cfcf; 
+  width: 100%;
+
+   
+}
+
+
+.container {
+    max-width: 132rem;
+    margin: auto;
+    height: 10rem;
+}
+
+.grid {
+    display: grid;
+}
+
