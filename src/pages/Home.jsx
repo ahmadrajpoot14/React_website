@@ -97,7 +97,7 @@ const Home = () => {
                 <div className="parallax-overlay">
                     <div className="parallax-content">
                         <h1>Unleash Your Creativity</h1>
-                        <Link to="/explore" className="explore-button">Explore</Link>
+                        <Link to="" className="explore-button">Explore</Link>
                     </div>
                 </div>
             </Parallax>

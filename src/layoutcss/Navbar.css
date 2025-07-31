@@ -1,5 +1,3 @@
-
-
 header {
   height: 10rem;
   box-shadow: 0 4px 6px rgba(100, 95, 95, 0.3); /* added some spread and opacity */
@@ -20,15 +18,15 @@ header {
     display: grid;
 }
 
-
-
 .ham-menu {
     display: none;
+    
 }
 
 
 .menu-web {
     display: flex;
+    
 }
 
 .menu-mobile {
@@ -40,6 +38,8 @@ header {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
     z-index: 20;
     border-top: 1px solid #ccc;
+    
+    
 }
 
 .menu-mobile ul {
@@ -49,6 +49,7 @@ header {
     padding: 1rem 0;
     margin: 0;
     list-style: none;
+    padding: 0% !important;
 }
 
 .menu-mobile ul li {
@@ -64,7 +65,8 @@ header {
     font-size: 2.5rem;
     color: rgb(128, 116, 116);
     cursor: pointer;
-    z-index: 1000;
+    z-index: 100;
+    
 }
 
 /* Logo styles */
@@ -72,12 +74,12 @@ header {
     text-decoration: none;
     display: flex;
     align-items: baseline;
-    gap: 5px;
+    gap: 1px;
     color: black;
 }
 
 .logo-cbr {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
     color: #000;
 }
@@ -148,17 +150,21 @@ nav ul {
 
     .ham-menu {
         display: inline-block;
+        
+        
     }
 
     /* Flex container for mobile nav: hamburger left, logo center, right side buttons */
     .navbar-grid {
         justify-content: space-between;
         position: relative;
+        padding: 0% !important;
     }
 
     /* Hamburger on left */
     .ham-menu {
         order: 1;
+        
     }
 
     /* Logo centered */

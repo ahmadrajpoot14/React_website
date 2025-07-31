@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 html {
     font-size: 62.5%;
     font-family: "urbanist";
@@ -20,3 +22,4 @@ button {
 li{
     list-style: none;
 }
+

@@ -28,7 +28,7 @@ function Footer() {
             <FaInstagram className="social-icon" />
           </a>
           <a
-            href="https://github.com/abubakarO1/AutoPartBazaar"
+            href="https://github.com/ahmadrajpoot14"
             className="social-link"
             aria-label="GitHub"
             target="_blank"

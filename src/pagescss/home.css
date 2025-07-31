@@ -5,6 +5,8 @@
   width: 100%;
   background: black;
   overflow: hidden;
+  padding: 0% !important;
+
 }
 
 /* Background video only takes 70% height */
@@ -82,20 +84,25 @@
 }
 
 
+/* Hero Features Strip */
 .hero-features-strip {
   position: absolute;
   bottom: 0;
+  padding: 0 !important;
   width: 100%;
-  height: 30vh;
+  /* Changed fixed height to min-height for better flexibility */
+  min-height: 30vh;
   background-color: #d3cfcf;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  color: rgb(0, 0, 0);
+  color: rgb(44, 43, 43);
   text-align: center;
-  padding: 1.5rem 2rem; /* reduced padding to bring items closer */
+  padding: 1.5rem 2rem;
   align-items: center;
   z-index: 2;
-  gap: 0.3rem; /* tighter gap */
+  gap: 0.5rem;
+  /* slightly more breathing room */
+  box-sizing: border-box;
 }
 
 .hero-feature-item {
@@ -103,17 +110,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem;
+  /* added padding to avoid tightness */
 }
 
+/* Icons */
 .feature-icon {
-  font-size: 3.5rem; /* bigger icon */
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
-  font-weight: normal; /* ensure not bold */
-  color: rgb(24, 24, 24);
+  font-weight: normal;
+  color: rgb(109, 103, 103);
 }
 
 .hero-feature-item h4 {
-  font-size: 1.8rem; /* bigger but normal weight */
+  font-size: 1.8rem;
+  /* bigger but normal weight */
   font-weight: 400;
   letter-spacing: normal;
   margin-bottom: 0.3rem;
@@ -121,7 +132,8 @@
 }
 
 .hero-feature-item p {
-  font-size: 1.5rem; /* bigger paragraph text */
+  font-size: 1.5rem;
+  /* bigger paragraph text */
   font-weight: 400;
   line-height: 1.3;
   max-width: 220px;
@@ -133,9 +145,10 @@
 @media screen and (max-width: 768px) {
   .hero-features-strip {
     grid-template-columns: repeat(2, 1fr);
+    /* Let height adjust automatically */
     height: auto;
     padding: 1rem 1.5rem;
-    gap: 1rem; /* slightly bigger gap on mobile for clarity */
+    gap: 1rem;
   }
 
   .hero-feature-item p {
@@ -143,9 +156,9 @@
   }
 }
 
-
 .features-section {
-  background-color: #252424; /* deep dark background */
+  background-color: #252424;
+  /* deep dark background */
   color: #f0f0f0;
   padding: 4rem 2rem;
   font-family: 'Montserrat', sans-serif;
@@ -157,7 +170,8 @@
 }
 
 .features-header span {
-  color: #e7e5e5; /* CBR red */
+  color: #e7e5e5;
+  /* CBR red */
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -194,8 +208,10 @@
 
 .feature-image-link {
   /* Remove max-width */
-  flex-grow: 1;           /* allow to expand */
-  flex-basis: 0;          /* start from 0 width */
+  flex-grow: 1;
+  /* allow to expand */
+  flex-basis: 0;
+  /* start from 0 width */
   text-align: center;
   color: #d3cfcf;
   text-decoration: none;
@@ -245,16 +261,20 @@
 
 .parallax-container {
   height: 650px;
-  position: relative; /* default or relative */
+  position: relative;
+  /* default or relative */
 }
 
 .parallax-overlay {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
+  justify-content: center;
+  /* horizontal center */
+  align-items: center;
+  /* vertical center */
 }
+
 .parallax-content {
   display: flex;
   flex-direction: column;
@@ -287,7 +307,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .parallax-content h1 {
+  .parallax-content h1 {
     font-size: 2rem;
   }
 
@@ -305,23 +325,27 @@
   color: #444;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8;
-  font-size: 1.15rem; /* increase paragraph font size */
+  font-size: 1.15rem;
+  /* increase paragraph font size */
 }
 
 .our-story-container h2 {
   font-weight: 700;
   letter-spacing: 3px;
   color: #131313;
-  font-size: 3rem; /* bigger heading */
+  font-size: 3rem;
+  /* bigger heading */
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
+
 .our-story-container h3 {
   font-weight: 700;
   letter-spacing: 1px;
   color: #131313;
-  font-size: 2rem; /* bigger heading */
+  font-size: 2rem;
+  /* bigger heading */
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -340,4 +364,3 @@
   color: #111;
   font-size: 1.1rem;
 }
-

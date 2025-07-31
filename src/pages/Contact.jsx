@@ -86,7 +86,7 @@ const Contact = () => {
                     <input
                       id="firstName"
                       type="text"
-                      placeholder="Tahir"
+                      placeholder="FirstName"
                       value={formData.firstName}
                       onChange={handleChange}
                       className={errors.firstName ? "input-error" : ""}
@@ -106,7 +106,7 @@ const Contact = () => {
                     <input
                       id="lastName"
                       type="text"
-                      placeholder="Farooq"
+                      placeholder="LastName"
                       value={formData.lastName}
                       onChange={handleChange}
                       className={errors.lastName ? "input-error" : ""}
@@ -219,8 +219,8 @@ const Contact = () => {
                 <FaMapMarkerAlt className="icon" />
                 <div>
                   <h3>Address</h3>
-                  <p>FAST Chiniot Faisalabad</p>
-                  <p>Sargodha Road, Zip Code: 35400</p>
+                  <p>SYSTEMS LIMITED </p>
+                  <p>Sejpal road Lahore , Zip Code: 54000</p>
                 </div>
               </div>
               <div className="info-item">
